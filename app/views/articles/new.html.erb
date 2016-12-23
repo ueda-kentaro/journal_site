@@ -1,0 +1,14 @@
+<h1>新規論文投稿</h1>
+<%= form_for @article do |f| %>
+<p>
+    論文タイトル<br>
+    <%= f.text_field :title %>
+</p>
+<p>
+    本文<br>
+    <%= f.text_area :body %>
+</p>
+<p>
+    <%= f.submit '投稿'%>
+</p>
+<% end %>

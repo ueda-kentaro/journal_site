@@ -2,6 +2,10 @@
 
 <% @articles.each do |article| %>
 
-  <p><a href="/articles/<%= article.id %>"><%= article.title %></a></p>
+    <p><a href="/articles/<%= article.id %>"><%= article.title %></a></p>
 <% end %>
 
+<hr>
+    <p>
+    <a href="/articles/new">新規論文投稿</a>
+    </p>
